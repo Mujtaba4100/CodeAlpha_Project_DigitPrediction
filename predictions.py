@@ -30,7 +30,7 @@ try:
 except Exception as e:
     print(f"Error during model training: {e}")
 
-model.save("model_predict1.keras")
+model.save("Model_Predict_Digit.keras")
 
 y_pred = model.predict(x_val)
 y_pred_classes = np.argmax(y_pred, axis=1)
